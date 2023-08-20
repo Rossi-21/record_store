@@ -9,5 +9,20 @@
 </head>
 <body>
     <h1>Login!</h1>
+    <div>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <label for="username">Username:</label>
+            <input type="text" name="username">
+            <label for="password">Password:</label>
+            <input type="password" name="password">
+            <button type="submit">Login</button>
+        </form>
+        <div>
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        </div>
+    </div>
 </body>
 </html>
