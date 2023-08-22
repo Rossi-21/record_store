@@ -1,0 +1,6 @@
+/* styles.html */
+
+body {
+    background-image: url("/static/img/bg.jpeg");
+    background-size: cover;
+}
