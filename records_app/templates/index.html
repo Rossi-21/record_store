@@ -8,22 +8,35 @@
     <title>Records!!</title>
 </head>
 <body>
-    <div>
-        <h1>Register</h1>
-        <form action="" method="post">
-            {% csrf_token %}
-            {{form.username.label}}
-            {{form.username}}
-            {{form.email.label}}
-            {{form.email}}
-            {{form.password1.label}}
-            {{form.password1}}
-            {{form.password2.label}}
-            {{form.password2}}
-            <button type="submit">Register</button>
-            <div class="error">
-                {{form.errors}}
-            </div>
-        </form>
+    <div class="container">
+        <div class="reg">
+            
+            <form action="" method="post">
+                <h1>Register</h1>
+                {% csrf_token %}
+                <div class="formInput">
+                    {{form.username.label}}
+                    {{form.username}}
+                </div>
+                <div class="formInput">
+                    {{form.email.label}}
+                    {{form.email}}
+                </div>
+                
+                    {{form.password1.label}}
+                <div class="formInput">
+                    {{form.password1}}
+                </div>
+                <div class="formInput">
+                    {{form.password2.label}}
+                    {{form.password2}}
+                </div>
+                <button type="submit">Register</button>
+                <div class="error">
+                    {{form.errors}}
+                </div>
+            </form>
+        </div>
+    </div>    
 </body>
 </html>

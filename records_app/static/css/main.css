@@ -1,6 +1,36 @@
 /* styles.html */
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background-image: url("/static/img/bg.jpeg");
     background-size: cover;
+}
+
+.reg {
+    border: 2px solid white;
+    width: 40%;
+    margin: auto;
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding-top: 5%;
+    padding-bottom: 5% ;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+}
+
+.formInput {
+    border-radius: 50px;
+    border: 2px solid white;
 }
