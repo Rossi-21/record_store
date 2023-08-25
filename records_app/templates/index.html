@@ -14,22 +14,17 @@
             <form action="" method="post">
                 <h1>Register</h1>
                 {% csrf_token %}
-                <div class="formInput">
-                    {{form.username.label}}
-                    {{form.username}}
+                <div class="">
+                    <input type="text" name="username" placeholder="Username...">
                 </div>
-                <div class="formInput">
-                    {{form.email.label}}
-                    {{form.email}}
+                <div class="">
+                    <input type="text" name="email" placeholder="Email..">
                 </div>
-                
-                    {{form.password1.label}}
-                <div class="formInput">
-                    {{form.password1}}
+                <div class="">
+                    <input type="password" name="password1" placeholder="Password...">
                 </div>
-                <div class="formInput">
-                    {{form.password2.label}}
-                    {{form.password2}}
+                <div class="">
+                    <input type="password" name="password2" placeholder="Confirm Password...">
                 </div>
                 <button type="submit">Register</button>
                 <div class="error">
