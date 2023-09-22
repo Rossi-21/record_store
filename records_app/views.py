@@ -22,6 +22,9 @@ def register(request):
 
     return render(request, "index.html", context)
 
+def logoutUser(request):
+    logout(request)
+    return redirect('login')
 
 def loginPage(request):
 
